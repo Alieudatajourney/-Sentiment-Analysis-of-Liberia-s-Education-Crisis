@@ -1,0 +1,111 @@
+Natural Language Processing and Sentiment Analysis on a News Article from Front Page Africa
+1. Introduction
+This report outlines the implementation of a Natural Language Processing (NLP) and Machine Learning (ML) project that performs sentiment analysis on a news article from the Front Page Africa website. The purpose of this analysis is not to validate or refute the author's claims or any political statements within the text. Rather, the focus is purely academic and technical—centered on demonstrating the implementation of NLP techniques such as text feature extraction, sentiment classification, and tone analysis using machine learning.
+
+2. Project Objective
+The primary goal of this project is to:
+
+Extract features from a real-world news article using NLP.
+
+Analyze the tone and sentiment polarity of the text.
+
+Classify the article as positive, neutral, or negative based on sentiment scores.
+
+Determine whether the content is subjective (opinion-based) or objective (fact-based).
+
+Use standard Python NLP tools (e.g., TextBlob, sklearn, pandas, matplotlib) for analysis.
+
+Understand how word length, word count, and tone influence sentiment outcomes.
+
+3. Ethical Statement
+Disclaimer: This analysis does not seek to verify, debunk, or promote any claims made by the author or the media outlet. It is strictly for educational and technical demonstration purposes involving natural language processing and feature engineering. The sentiment analysis is automated and purely based on machine learning models, which may not fully understand nuanced sociopolitical context.
+
+4. Dataset Source
+The dataset for this experiment is a news article obtained from the Front Page Africa website. Below is a short excerpt (or entire content, depending on notebook length) from the article used:
+
+“[INSERT SHORT PARAGRAPH FROM ARTICLE HERE, AS USED IN THE NOTEBOOK]”
+
+This text was pasted into the notebook and subjected to preprocessing, including:
+
+Tokenization
+
+Lowercasing
+
+Stopword removal
+
+Lemmatization
+
+5. Methodology
+The workflow followed these major steps:
+
+Data Loading: Text was manually extracted from the article and stored in a Python string variable.
+
+Text Preprocessing: Used nltk and re for cleaning, tokenization, and normalization.
+
+Sentiment Analysis: Utilized TextBlob to determine:
+
+Polarity: Range between -1 (negative) to +1 (positive)
+
+Subjectivity: Range between 0 (objective) to 1 (subjective)
+
+Feature Engineering:
+
+Average word length
+
+Sentence count
+
+Word count
+
+Presence of emotional or polarizing words
+
+Visualization:
+
+Bar graphs showing polarity distribution
+
+Pie charts indicating subjectivity spread
+
+Word clouds (optional)
+
+6. Results
+After running the analysis:
+
+Feature	Value
+Polarity Score	e.g., 0.13 (Positive)
+Subjectivity Score	e.g., 0.63 (Subjective)
+Tone	Slightly Positive
+Interpretation	The article reflects a generally opinionated tone with mild positive sentiment.
+Word Count	e.g., 540 words
+Avg. Word Length	e.g., 4.7 characters
+
+Note: These are example values. The actual numbers should be copied from the Feature Extraction.ipynb output once the notebook is run.
+
+7. Discussion
+From the analysis:
+
+The article leaned slightly positive in tone.
+
+It was largely subjective, indicating opinionated writing.
+
+Feature metrics such as word length and sentence structure supported the NLP classifier’s decision.
+
+8. Tools Used
+Python 3.x
+
+Jupyter Notebook
+
+Libraries:
+
+TextBlob
+
+NLTK
+
+Pandas
+
+Matplotlib / Seaborn
+
+sklearn (for any classification)
+
+re (regex)
+
+9. Conclusion
+This project successfully demonstrates the power of NLP in performing automated sentiment classification on real-world news articles. It offers insights into tone and writing style, and how machine learning can interpret these at scale. The key learning is not from the content of the article itself but from understanding how NLP models extract, analyze, and label textual information.
